@@ -4,42 +4,30 @@ import { useState, useEffect } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight, Star } from "lucide-react"
-import Image from "next/image"
 
 const testimonials = [
   {
     id: 1,
-    name: "Maria Silva",
-    business: "Loja de Roupas",
+    name: "Alvaro Liberato",
+    business: "Hortifruti Estrela Dalva",
     content:
       "Jhonatan transformou completamente minha forma de vender pelo WhatsApp. Minhas vendas aumentaram 250% em apenas 2 meses!",
-    avatar: "/placeholder.svg?height=60&width=60",
     rating: 5,
   },
   {
     id: 2,
-    name: "João Santos",
-    business: "Restaurante",
+    name: "Luana Dias",
+    business: "Loja de Roupa Infantil",
     content:
       "Profissional excepcional! Me ensinou estratégias que eu nunca imaginei que existissem. Recomendo para todos os empreendedores.",
-    avatar: "/placeholder.svg?height=60&width=60",
     rating: 5,
   },
   {
     id: 3,
-    name: "Ana Costa",
-    business: "Consultoria",
+    name: "Gerson Oliveira",
+    business: "Advocacia",
     content:
       "Investimento que mais deu retorno no meu negócio. Jhonatan é um verdadeiro especialista em vendas pelo WhatsApp.",
-    avatar: "/placeholder.svg?height=60&width=60",
-    rating: 5,
-  },
-  {
-    id: 4,
-    name: "Carlos Oliveira",
-    business: "E-commerce",
-    content: "Em 3 meses, meu faturamento triplicou! As estratégias do Jhonatan são simplesmente revolucionárias.",
-    avatar: "/placeholder.svg?height=60&width=60",
     rating: 5,
   },
 ]
@@ -77,18 +65,9 @@ export function TestimonialCarousel() {
             "{testimonials[currentIndex].content}"
           </blockquote>
 
-          <div className="flex items-center justify-center">
-            <Image
-              src={testimonials[currentIndex].avatar || "/placeholder.svg"}
-              alt={testimonials[currentIndex].name}
-              width={60}
-              height={60}
-              className="rounded-full mr-4"
-            />
-            <div className="text-center">
-              <div className="font-bold text-lg text-gray-900">{testimonials[currentIndex].name}</div>
-              <div className="text-green-600 font-medium">{testimonials[currentIndex].business}</div>
-            </div>
+          <div className="text-center">
+            <div className="font-bold text-lg text-gray-900">{testimonials[currentIndex].name}</div>
+            <div className="text-green-600 font-medium">{testimonials[currentIndex].business}</div>
           </div>
         </CardContent>
       </Card>

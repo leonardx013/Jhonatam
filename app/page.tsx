@@ -22,7 +22,7 @@ import { TestimonialCarousel } from "@/components/testimonial-carousel"
 
 export default function LovableProWebsite() {
   const whatsappLink =
-    "https://api.whatsapp.com/send?phone=5513991995463&text=Ol%C3%A1%2C%20Jhonatan%20Willians!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os."
+    "https://api.whatsapp.com/send?phone=5513991995463&text=Ol%C3%A1%2C%20Jhonatan%20Willians!%20Gostaria%20de%20saber%20mais%20sobre%C3%A9us%20servi%C3%A7os."
   const instagramLink = "https://www.instagram.com/013jhonatan/"
 
   return (
@@ -61,14 +61,13 @@ export default function LovableProWebsite() {
       </header>
 
       {/* Urgency Bar */}
-      
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black pt-20">
         <div className="absolute inset-0 bg-transparent" />
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <Badge className="mb-6 bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-2">
-            🚨 A HORA DE ALAVANCAR SEU NEGÓCIO É AGORA!!!           
+            🚨 A HORA DE ALAVANCAR SEU NEGÓCIO É AGORA!!!
           </Badge>
 
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
@@ -97,15 +96,10 @@ export default function LovableProWebsite() {
             </Badge>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            
-            
-          </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center"></div>
 
           {/* Live indicator */}
-          <div className="mt-8 flex items-center justify-center">
-            
-          </div>
+          <div className="mt-8 flex items-center justify-center"></div>
         </div>
       </section>
 
@@ -197,34 +191,13 @@ export default function LovableProWebsite() {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="flex justify-center">
               <Image
-                src="/images/IMG_7440.png"
-                alt="Jhonatan Willians - Foto Profissional 1"
-                width={250}
-                height={300}
-                className="rounded-lg object-cover hover:scale-105 transition-transform duration-300"
-              />
-              <Image
-                src="/images/IMG_3218.png"
-                alt="Jhonatan Willians - Foto Profissional 2"
-                width={250}
-                height={300}
-                className="rounded-lg object-cover mt-8 hover:scale-105 transition-transform duration-300"
-              />
-              <Image
-                src="/images/IMG_7353.png"
-                alt="Jhonatan Willians - Foto Profissional 3"
-                width={250}
-                height={300}
-                className="rounded-lg object-cover -mt-8 hover:scale-105 transition-transform duration-300"
-              />
-              <Image
-                src="/images/IMG_7978.png"
-                alt="Jhonatan Willians - Foto Profissional 4"
-                width={250}
-                height={300}
-                className="rounded-lg object-cover hover:scale-105 transition-transform duration-300"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/imagem%201.jpg-OXrGKGXYnAyi3aJHWtVxK7NnNEyNwi.jpeg"
+                alt="Jhonatan Willians - Especialista em WhatsApp Business"
+                width={400}
+                height={500}
+                className="rounded-lg object-cover hover:scale-105 transition-transform duration-300 shadow-lg"
               />
             </div>
           </div>
