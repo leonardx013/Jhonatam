@@ -21,8 +21,38 @@ import { AnimatedCounter } from "@/components/animated-counter"
 import { TestimonialCarousel } from "@/components/testimonial-carousel"
 
 export default function LovableProWebsite() {
-  const whatsappLink =
-    "https://api.whatsapp.com/send?phone=5513991995463&text=Ol%C3%A1%2C%20Jhonatan%20Willians!%20Gostaria%20de%20saber%20mais%20sobre%C3%A9us%20servi%C3%A7os."
+  const whatsappMessages = {
+    header:
+      "https://api.whatsapp.com/send?phone=5513991995463&text=Ol%C3%A1%2C%20Jhonatan!%20Cliquei%20no%20bot%C3%A3o%20do%20cabe%C3%A7alho%20e%20quero%20saber%20mais%20sobre%20seus%20servi%C3%A7os.",
+    painPoints:
+      "https://api.whatsapp.com/send?phone=5513991995463&text=Ol%C3%A1%2C%20Jhonatan!%20Estou%20cansado%20de%20ter%20vendas%20paradas%20e%20quero%20resolver%20isso%20agora!",
+    aboutConsultation:
+      "https://api.whatsapp.com/send?phone=5513991995463&text=Ol%C3%A1%2C%20Jhonatan!%20Quero%20agendar%20uma%20consultoria%20gratuita%20para%20transformar%20meu%20WhatsApp!",
+    aboutInstagram:
+      "https://api.whatsapp.com/send?phone=5513991995463&text=Ol%C3%A1%2C%20Jhonatan!%20Vim%20do%20seu%20site%20e%20quero%20ver%20mais%20resultados%20no%20Instagram!",
+    whatsappService:
+      "https://api.whatsapp.com/send?phone=5513991995463&text=Ol%C3%A1%2C%20Jhonatan!%20Quero%20turbinar%20meu%20WhatsApp%20Business%20e%20transformar%20em%20m%C3%A1quina%20de%20vendas!",
+    marketingService:
+      "https://api.whatsapp.com/send?phone=5513991995463&text=Ol%C3%A1%2C%20Jhonatan!%20Preciso%20atrair%20mais%20clientes%20qualificados%20com%20marketing%20digital!",
+    mentoringService:
+      "https://api.whatsapp.com/send?phone=5513991995463&text=Ol%C3%A1%2C%20Jhonatan!%20Quero%20uma%20mentoria%20personalizada%20para%20meu%20neg%C3%B3cio%20decolar!",
+    freeConsultation:
+      "https://api.whatsapp.com/send?phone=5513991995463&text=Ol%C3%A1%2C%20Jhonatan!%20Quero%20agendar%20minha%20consultoria%20gratuita%20agora%20mesmo!",
+    offer990:
+      "https://api.whatsapp.com/send?phone=5513991995463&text=Ol%C3%A1%2C%20Jhonatan!%20Quero%20o%20Arsenal%20de%20Sobreviv%C3%AAncia%20WhatsApp%20por%20R%24%209%2C90!",
+    offer749:
+      "https://api.whatsapp.com/send?phone=5513991995463&text=Ol%C3%A1%2C%20Jhonatan!%20Quero%20garantir%20minha%20vaga%20no%20M%C3%A9todo%20Sobreviv%C3%AAncia%20Imediata%20por%20R%24%20749!",
+    doubts:
+      "https://api.whatsapp.com/send?phone=5513991995463&text=Ol%C3%A1%2C%20Jhonatan!%20Tenho%20algumas%20d%C3%BAvidas%20sobre%20seus%20servi%C3%A7os%20e%20gostaria%20de%20conversar.",
+    transformation:
+      "https://api.whatsapp.com/send?phone=5513991995463&text=Ol%C3%A1%2C%20Jhonatan!%20Quero%20come%C3%A7ar%20minha%20transforma%C3%A7%C3%A3o%20e%20multiplicar%20minhas%20vendas!",
+    successCase:
+      "https://api.whatsapp.com/send?phone=5513991995463&text=Ol%C3%A1%2C%20Jhonatan!%20Quero%20ser%20seu%20pr%C3%B3ximo%20caso%20de%20sucesso!",
+    faqDoubts:
+      "https://api.whatsapp.com/send?phone=5513991995463&text=Ol%C3%A1%2C%20Jhonatan!%20Li%20o%20FAQ%20mas%20ainda%20tenho%20d%C3%BAvidas%20espec%C3%ADficas.",
+    finalCta:
+      "https://api.whatsapp.com/send?phone=5513991995463&text=Ol%C3%A1%2C%20Jhonatan!%20N%C3%A3o%20quero%20mais%20vendas%20paradas!%20QUERO%20TRANSFORMAR%20AGORA!",
+  }
   const instagramLink = "https://www.instagram.com/013jhonatan/"
 
   return (
@@ -52,15 +82,13 @@ export default function LovableProWebsite() {
             </Link>
           </nav>
           <Button asChild className="bg-green-600 hover:bg-green-700 shadow-lg">
-            <Link href={whatsappLink} target="_blank">
+            <Link href={whatsappMessages.header} target="_blank">
               <MessageCircle className="w-4 h-4 mr-2" />
               WhatsApp
             </Link>
           </Button>
         </div>
       </header>
-
-      {/* Urgency Bar */}
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black pt-20">
@@ -84,22 +112,14 @@ export default function LovableProWebsite() {
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <Badge className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-sm">
               <CheckCircle className="w-4 h-4 mr-2" />
-              +2.847 NEGÓCIOS SALVOS
+              +33 NEGÓCIOS SALVOS PELO BRASIL  
             </Badge>
             <Badge className="bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 text-sm">
               <Star className="w-4 h-4 mr-2" />
-              98% DE APROVAÇÃO
+              98% DE RECORRÊNCIA DE CLIENTES   
             </Badge>
-            <Badge className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 text-sm">
-              <Instagram className="w-4 h-4 mr-2" />
-              @013jhonatan
-            </Badge>
+            
           </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center"></div>
-
-          {/* Live indicator */}
-          <div className="mt-8 flex items-center justify-center"></div>
         </div>
       </section>
 
@@ -131,7 +151,7 @@ export default function LovableProWebsite() {
             </div>
           </div>
           <Button size="lg" asChild className="bg-green-600 hover:bg-green-700 text-lg px-8 py-4">
-            <Link href={whatsappLink} target="_blank">
+            <Link href={whatsappMessages.painPoints} target="_blank">
               <MessageCircle className="w-5 h-5 mr-2" />
               Quero Resolver Isso Agora!
             </Link>
@@ -177,7 +197,7 @@ export default function LovableProWebsite() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild className="bg-green-600 hover:bg-green-700">
-                  <Link href={whatsappLink} target="_blank">
+                  <Link href={whatsappMessages.aboutConsultation} target="_blank">
                     <MessageCircle className="w-4 h-4 mr-2" />
                     Agendar Consultoria Gratuita
                   </Link>
@@ -197,7 +217,7 @@ export default function LovableProWebsite() {
                 alt="Jhonatan Willians - Especialista em WhatsApp Business"
                 width={400}
                 height={500}
-                className="rounded-lg object-cover hover:scale-105 transition-transform duration-300 shadow-lg"
+                className="object-cover hover:scale-105 transition-transform duration-300 shadow-lg rounded-full"
               />
             </div>
           </div>
@@ -247,7 +267,11 @@ export default function LovableProWebsite() {
                     </span>
                   </li>
                 </ul>
-                <Button className="w-full bg-green-600 hover:bg-green-700">Quero Turbinar Meu WhatsApp</Button>
+                <Button className="w-full bg-green-600 hover:bg-green-700" asChild>
+                  <Link href={whatsappMessages.whatsappService} target="_blank">
+                    Quero Turbinar Meu WhatsApp
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
 
@@ -280,7 +304,11 @@ export default function LovableProWebsite() {
                     </span>
                   </li>
                 </ul>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">Quero Atrair Mais Clientes</Button>
+                <Button className="w-full bg-blue-600 hover:bg-blue-700" asChild>
+                  <Link href={whatsappMessages.marketingService} target="_blank">
+                    Quero Atrair Mais Clientes
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
 
@@ -313,14 +341,18 @@ export default function LovableProWebsite() {
                     </span>
                   </li>
                 </ul>
-                <Button className="w-full bg-purple-600 hover:bg-purple-700">Quero Mentoria Personalizada</Button>
+                <Button className="w-full bg-purple-600 hover:bg-purple-700" asChild>
+                  <Link href={whatsappMessages.mentoringService} target="_blank">
+                    Quero Mentoria Personalizada
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
           </div>
 
           <div className="text-center">
             <Button size="lg" asChild className="bg-green-600 hover:bg-green-700 text-lg px-8 py-4">
-              <Link href={whatsappLink} target="_blank">
+              <Link href={whatsappMessages.freeConsultation} target="_blank">
                 <Phone className="w-5 h-5 mr-2" />
                 Agendar Consultoria Gratuita Agora!
               </Link>
@@ -378,7 +410,7 @@ export default function LovableProWebsite() {
                 </ul>
 
                 <Button size="lg" className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold" asChild>
-                  <Link href={whatsappLink} target="_blank">
+                  <Link href={whatsappMessages.offer990} target="_blank">
                     <Zap className="w-5 h-5 mr-2" />
                     QUERO POR R$ 9,90
                   </Link>
@@ -423,13 +455,13 @@ export default function LovableProWebsite() {
                 </ul>
 
                 <Button size="lg" className="w-full bg-white hover:bg-gray-100 text-purple-700 font-bold" asChild>
-                  <Link href={whatsappLink} target="_blank">
+                  <Link href={whatsappMessages.offer749} target="_blank">
                     <Shield className="w-5 h-5 mr-2" />
                     QUERO GARANTIR MINHA VAGA
                   </Link>
                 </Button>
 
-                <p className="text-center text-blue-100 text-sm mt-4">🎯 Apenas 3 vagas restantes!</p>
+                <p className="text-center text-blue-100 text-sm mt-4">{"Só EU e VOCÊ\n🎯 Apenas 3 vagas restantes!"}</p>
               </CardContent>
             </Card>
           </div>
@@ -442,7 +474,7 @@ export default function LovableProWebsite() {
               className="text-white border-white hover:bg-white hover:text-gray-900 bg-transparent"
               asChild
             >
-              <Link href={whatsappLink} target="_blank">
+              <Link href={whatsappMessages.doubts} target="_blank">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Tirar Dúvidas no WhatsApp
               </Link>
@@ -466,25 +498,25 @@ export default function LovableProWebsite() {
 
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div className="text-center">
-              <div className="w-20 h-20 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-lg">
+              <div className="w-20 h-20 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-lg bg-green-300">
                 1
               </div>
               <h3 className="text-lg font-bold mb-2">Diagnóstico Completo</h3>
-              <p className="text-gray-600">Identifico exatamente onde seu negócio está perdendo vendas</p>
+              <p className="text-gray-600">Identifico exatamente onde seu negócio está perdendo vendas e ajudo você a virar referência no seu nicho</p>
             </div>
             <div className="text-center">
-              <div className="w-20 h-20 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-lg">
+              <div className="w-20 h-20 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-lg bg-green-400">
                 2
               </div>
               <h3 className="text-lg font-bold mb-2">Estratégia Personalizada</h3>
               <p className="text-gray-600">Crio um plano específico para seu segmento e público</p>
             </div>
             <div className="text-center">
-              <div className="w-20 h-20 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-lg">
+              <div className="w-20 h-20 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-lg bg-green-500">
                 3
               </div>
               <h3 className="text-lg font-bold mb-2">Implementação Rápida</h3>
-              <p className="text-gray-600">Colocamos tudo em funcionamento em até 7 dias</p>
+              <p className="text-gray-600">Colocamos tudo em funcionamento em até 72 horas</p>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-lg">
@@ -497,7 +529,7 @@ export default function LovableProWebsite() {
 
           <div className="text-center">
             <Button size="lg" asChild className="bg-green-600 hover:bg-green-700 text-lg px-8 py-4">
-              <Link href={whatsappLink} target="_blank">
+              <Link href={whatsappMessages.transformation} target="_blank">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Quero Começar Minha Transformação!
               </Link>
@@ -523,7 +555,7 @@ export default function LovableProWebsite() {
 
           <div className="text-center mt-12">
             <Button size="lg" asChild className="bg-green-600 hover:bg-green-700 text-lg px-8 py-4">
-              <Link href={whatsappLink} target="_blank">
+              <Link href={whatsappMessages.successCase} target="_blank">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Quero Ser o Próximo Caso de Sucesso!
               </Link>
@@ -545,8 +577,7 @@ export default function LovableProWebsite() {
               <CardContent className="p-0">
                 <h3 className="text-lg font-bold mb-2">Funciona para qualquer tipo de negócio?</h3>
                 <p className="text-gray-600">
-                  Sim! Minhas estratégias são adaptáveis para diversos segmentos: e-commerce, serviços, restaurantes,
-                  consultoria, produtos físicos e digitais. Se você vende pelo WhatsApp, vai funcionar.
+                  Sim! Minhas estratégias são adaptáveis para diversos segmentos: e-commerce, serviços, restaurantes, consultoria, produtos físicos e digitais. Se você vende pelo WhatsApp ou quer rechonecimento da sua marca/loja, vai funcionar.
                 </p>
               </CardContent>
             </Card>
@@ -555,9 +586,7 @@ export default function LovableProWebsite() {
               <CardContent className="p-0">
                 <h3 className="text-lg font-bold mb-2">Quanto tempo leva para ver resultados?</h3>
                 <p className="text-gray-600">
-                  A maioria dos meus clientes começam a ver resultados nas primeiras 2 semanas. Resultados mais
-                  significativos aparecem entre 30-60 dias. Mas já tive clientes que dobraram as vendas na primeira
-                  semana!
+                  A maioria dos meus clientes começam a ver resultados na PRIMEIRA SEMANA. Resultados mais significativos geralmente aparecem em 30 dias. Mas já tive clientes que dobraram as vendas já na primeira semana!
                 </p>
               </CardContent>
             </Card>
@@ -586,7 +615,7 @@ export default function LovableProWebsite() {
           <div className="text-center mt-12">
             <p className="text-gray-600 mb-4">Ainda tem dúvidas? Fale comigo diretamente!</p>
             <Button size="lg" asChild className="bg-green-600 hover:bg-green-700 text-lg px-8 py-4">
-              <Link href={whatsappLink} target="_blank">
+              <Link href={whatsappMessages.faqDoubts} target="_blank">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Tirar Minhas Dúvidas no WhatsApp
               </Link>
@@ -612,7 +641,7 @@ export default function LovableProWebsite() {
               asChild
               className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg px-8 py-4"
             >
-              <Link href={whatsappLink} target="_blank">
+              <Link href={whatsappMessages.finalCta} target="_blank">
                 <Zap className="w-5 h-5 mr-2" />
                 QUERO TRANSFORMAR AGORA!
               </Link>
@@ -632,7 +661,7 @@ export default function LovableProWebsite() {
 
           <div className="flex items-center justify-center text-green-100">
             <Clock className="w-5 h-5 mr-2" />
-            <span className="font-medium">⏰ Apenas 10 vagas disponíveis este mês!</span>
+            <span className="font-medium">7 VAGAS PREENCHIDAS⏰ Apenas 3 vagas disponíveis este mês!</span>
           </div>
         </div>
       </section>
@@ -648,7 +677,11 @@ export default function LovableProWebsite() {
                 <Link href={instagramLink} target="_blank" className="text-gray-400 hover:text-white transition-colors">
                   <Instagram className="w-5 h-5" />
                 </Link>
-                <Link href={whatsappLink} target="_blank" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href={whatsappMessages.doubts}
+                  target="_blank"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   <MessageCircle className="w-5 h-5" />
                 </Link>
               </div>
@@ -698,10 +731,7 @@ export default function LovableProWebsite() {
                   <Instagram className="w-4 h-4 mr-2" />
                   @013jhonatan
                 </div>
-                <div className="flex items-center">
-                  <MapPin className="w-4 h-4 mr-2" />
-                  Guarujá, SP
-                </div>
+                
               </div>
             </div>
           </div>
