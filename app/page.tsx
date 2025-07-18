@@ -4,7 +4,6 @@ import { Badge } from "@/components/ui/badge"
 import {
   MessageCircle,
   Instagram,
-  MapPin,
   Star,
   CheckCircle,
   TrendingUp,
@@ -112,42 +111,41 @@ export default function LovableProWebsite() {
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <Badge className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-sm">
               <CheckCircle className="w-4 h-4 mr-2" />
-              +33 NEGÓCIOS SALVOS PELO BRASIL  
+              +33 NEGÓCIOS SALVOS PELO BRASIL
             </Badge>
             <Badge className="bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 text-sm">
               <Star className="w-4 h-4 mr-2" />
-              98% DE RECORRÊNCIA DE CLIENTES   
+              98% DE RECORRÊNCIA DE CLIENTES
             </Badge>
-            
           </div>
         </div>
       </section>
 
       {/* Pain Points Section */}
-      <section className="py-20 bg-red-50">
+      <section className="py-20 bg-yellow-600">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-gray-900">Você está cansado de...</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-green-50">Você está cansado de...</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="p-6">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-white">
                 <span className="text-2xl">😤</span>
               </div>
-              <h3 className="text-lg font-bold mb-2 text-red-700">Clientes que "somem" no meio da conversa?</h3>
-              <p className="text-gray-600">Você investe tempo explicando, mas eles desaparecem sem comprar</p>
+              <h3 className="text-lg font-bold mb-2 text-white">Clientes que "somem" no meio da conversa?</h3>
+              <p className="text-white">Você investe tempo explicando, mas eles desaparecem sem comprar</p>
             </div>
             <div className="p-6">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-white">
                 <span className="text-2xl">💸</span>
               </div>
-              <h3 className="text-lg font-bold mb-2 text-red-700">Vendas que não saem do papel?</h3>
-              <p className="text-gray-600">Muitas conversas, poucos fechamentos, faturamento baixo</p>
+              <h3 className="text-lg font-bold mb-2 text-white">Vendas que não saem do papel?</h3>
+              <p className="text-white">Muitas conversas, poucos fechamentos, faturamento baixo</p>
             </div>
             <div className="p-6">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-white">
                 <span className="text-2xl">😰</span>
               </div>
-              <h3 className="text-lg font-bold mb-2 text-red-700">Não saber o que falar para vender?</h3>
-              <p className="text-gray-600">Falta de scripts e estratégias que realmente convertem</p>
+              <h3 className="text-lg font-bold mb-2 text-white">Não saber o que falar para vender?</h3>
+              <p className="text-white">Falta de scripts e estratégias que realmente convertem</p>
             </div>
           </div>
           <Button size="lg" asChild className="bg-green-600 hover:bg-green-700 text-lg px-8 py-4">
@@ -160,18 +158,18 @@ export default function LovableProWebsite() {
       </section>
 
       {/* About Section */}
-      <section id="sobre" className="py-20 bg-gray-50">
+      <section id="sobre" className="py-20 bg-green-600">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge className="mb-4 bg-blue-100 text-blue-800">Quem é Jhonatan Willians?</Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-              O Especialista que vai <span className="text-green-600">Transformar</span> seu WhatsApp
+              O Especialista que vai <span className="text-white">Transformar</span> seu WhatsApp
             </h2>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-lg text-gray-600 mb-8">
+              <p className="text-lg mb-8 text-white">
                 Jhonatan Willians não é só mais um nome no marketing digital. Ele é o típico caso de quem começou com
                 zero, sem curso de R$10 mil, sem mentoria gringa, sem agência de glamour... só com uma coisa nas costas:
                 <strong className="text-green-600"> Fome e um senso de urgência de vencer!</strong>
@@ -196,7 +194,7 @@ export default function LovableProWebsite() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild className="bg-green-600 hover:bg-green-700">
+                <Button asChild className="hover:bg-green-700">
                   <Link href={whatsappMessages.aboutConsultation} target="_blank">
                     <MessageCircle className="w-4 h-4 mr-2" />
                     Agendar Consultoria Gratuita
@@ -225,14 +223,14 @@ export default function LovableProWebsite() {
       </section>
 
       {/* Services Section */}
-      <section id="servicos" className="py-20">
+      <section id="servicos" className="py-20 bg-slate-800">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-green-100 text-green-800">Meus Serviços</Badge>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               Como vou <span className="text-green-600">Multiplicar</span> suas Vendas
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg max-w-2xl mx-auto text-white">
               Estratégias testadas e aprovadas que já transformaram mais de 500 negócios
             </p>
           </div>
@@ -244,25 +242,25 @@ export default function LovableProWebsite() {
                   <MessageCircle className="w-10 h-10 text-green-600" />
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-center">WhatsApp Business Turbinado</h3>
-                <p className="text-gray-600 mb-6 text-center">
-                  Transforme seu WhatsApp em uma <strong>máquina de vendas automática</strong>
+                <p className="mb-6 text-center">
+                  Transforme seu WhatsApp em uma <strong className="">máquina de vendas automática</strong>
                 </p>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start text-sm text-gray-600">
                     <CheckCircle className="w-4 h-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>
+                    <span className="">
                       <strong>Scripts prontos</strong> que convertem 3x mais
                     </span>
                   </li>
                   <li className="flex items-start text-sm text-gray-600">
                     <CheckCircle className="w-4 h-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>
+                    <span className="">
                       <strong>Automações inteligentes</strong> que trabalham por você
                     </span>
                   </li>
                   <li className="flex items-start text-sm text-gray-600">
                     <CheckCircle className="w-4 h-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>
+                    <span className="">
                       <strong>Funil de vendas</strong> que nunca para de vender
                     </span>
                   </li>
@@ -355,6 +353,66 @@ export default function LovableProWebsite() {
               <Link href={whatsappMessages.freeConsultation} target="_blank">
                 <Phone className="w-5 h-5 mr-2" />
                 Agendar Consultoria Gratuita Agora!
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Impacto Rápido Section */}
+      <section className="py-20 bg-slate-800">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold mb-12 text-green-600 border-0">
+              Impacto RÁPIDO Mesmo com Pouco Orçamento!
+            </h2>
+          </div>
+
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center text-center tracking-normal leading-7 m-auto p-0 shadow-2xl rounded-3xl">
+              <div className="space-y-8">
+                {/* Green Box */}
+                <div className="bg-green-600 text-white p-8 rounded-2xl py-8 my-0 mx-0 border-0">
+                  <h3 className="text-2xl font-bold mb-6">FAZ ESSA CONTA COMIGO:</h3>
+                  <p className="text-lg leading-relaxed">
+                    Se você investir <span className="text-yellow-300 font-bold text-xl">R$15 por dia</span>, durante 30
+                    dias, com a configuração que eu vou fazer...
+                  </p>
+                  <p className="text-lg leading-relaxed mt-4">
+                    dá pra mostrar sua loja para mais de{" "}
+                    <span className="text-yellow-300 font-bold text-2xl">15 MIL pessoas</span> da sua cidade ou região!
+                  </p>
+                </div>
+
+                {/* Description Text */}
+                <div className="text-gray-800">
+                  <p className="text-lg leading-relaxed font-medium text-white">
+                    Imagine isso acontecendo com mais de 20 anúncios falando sobre seus produtos, seus serviços, suas
+                    promoções... e um botão para te chamar <strong>DIRETO</strong> no WhatsApp?
+                  </p>
+                </div>
+
+                {/* Yellow Box */}
+                <div className="text-black p-8 rounded-2xl bg-yellow-600">
+                  <p className="text-xl font-bold text-center leading-relaxed text-green-50">
+                    É isso que vai acontecer, e você <strong>NÃO</strong> vai fazer isso sozinha. <strong>EU</strong>{" "}
+                    vou te acompanhar!
+                  </p>
+                </div>
+              </div>
+
+              {/* Right Side - Image */}
+              <div className="flex justify-center">
+                
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Button size="lg" asChild className="bg-green-600 hover:bg-green-700 text-lg px-8 py-4">
+              <Link href={whatsappMessages.transformation} target="_blank">
+                <MessageCircle className="w-5 h-5 mr-2" />
+                Quero Começar Agora Mesmo!
               </Link>
             </Button>
           </div>
@@ -484,7 +542,7 @@ export default function LovableProWebsite() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-transparent">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-blue-100 text-blue-800">Metodologia Comprovada</Badge>
@@ -502,7 +560,9 @@ export default function LovableProWebsite() {
                 1
               </div>
               <h3 className="text-lg font-bold mb-2">Diagnóstico Completo</h3>
-              <p className="text-gray-600">Identifico exatamente onde seu negócio está perdendo vendas e ajudo você a virar referência no seu nicho</p>
+              <p className="text-gray-600">
+                Identifico exatamente onde seu negócio está perdendo vendas e ajudo você a virar referência no seu nicho
+              </p>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-lg bg-green-400">
@@ -539,14 +599,14 @@ export default function LovableProWebsite() {
       </section>
 
       {/* Testimonials Section */}
-      <section id="depoimentos" className="py-20">
+      <section id="depoimentos" className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-yellow-100 text-yellow-800">Depoimentos Reais</Badge>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               O que meus clientes <span className="text-green-600">Conquistaram</span>
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg max-w-2xl mx-auto text-white">
               Resultados reais de pessoas que saíram do zero e transformaram seus negócios
             </p>
           </div>
@@ -565,11 +625,11 @@ export default function LovableProWebsite() {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="py-20 bg-gray-50">
+      <section id="faq" className="py-20 bg-slate-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-purple-100 text-purple-800">Dúvidas Frequentes</Badge>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Perguntas que Sempre Recebo</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Perguntas que Sempre Recebo</h2>
           </div>
 
           <div className="max-w-3xl mx-auto space-y-6">
@@ -577,7 +637,9 @@ export default function LovableProWebsite() {
               <CardContent className="p-0">
                 <h3 className="text-lg font-bold mb-2">Funciona para qualquer tipo de negócio?</h3>
                 <p className="text-gray-600">
-                  Sim! Minhas estratégias são adaptáveis para diversos segmentos: e-commerce, serviços, restaurantes, consultoria, produtos físicos e digitais. Se você vende pelo WhatsApp ou quer rechonecimento da sua marca/loja, vai funcionar.
+                  Sim! Minhas estratégias são adaptáveis para diversos segmentos: e-commerce, serviços, restaurantes,
+                  consultoria, produtos físicos e digitais. Se você vende pelo WhatsApp ou quer rechonecimento da sua
+                  marca/loja, vai funcionar.
                 </p>
               </CardContent>
             </Card>
@@ -586,7 +648,9 @@ export default function LovableProWebsite() {
               <CardContent className="p-0">
                 <h3 className="text-lg font-bold mb-2">Quanto tempo leva para ver resultados?</h3>
                 <p className="text-gray-600">
-                  A maioria dos meus clientes começam a ver resultados na PRIMEIRA SEMANA. Resultados mais significativos geralmente aparecem em 30 dias. Mas já tive clientes que dobraram as vendas já na primeira semana!
+                  A maioria dos meus clientes começam a ver resultados na PRIMEIRA SEMANA. Resultados mais
+                  significativos geralmente aparecem em 30 dias. Mas já tive clientes que dobraram as vendas já na
+                  primeira semana!
                 </p>
               </CardContent>
             </Card>
@@ -613,7 +677,7 @@ export default function LovableProWebsite() {
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-gray-600 mb-4">Ainda tem dúvidas? Fale comigo diretamente!</p>
+            <p className="mb-4 text-white">Ainda tem dúvidas? Fale comigo diretamente!</p>
             <Button size="lg" asChild className="bg-green-600 hover:bg-green-700 text-lg px-8 py-4">
               <Link href={whatsappMessages.faqDoubts} target="_blank">
                 <MessageCircle className="w-5 h-5 mr-2" />
@@ -667,7 +731,6 @@ export default function LovableProWebsite() {
       </section>
 
       {/* Footer */}
-      
     </div>
   )
 }
