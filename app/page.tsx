@@ -58,7 +58,7 @@ export default function LovableProWebsite() {
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-evenly">
           <div className="flex items-center">
             <div className="font-bold text-2xl text-gray-900">Jhonatan Willians</div>
             <Badge className="ml-3 bg-green-100 text-green-800 text-xs">
@@ -67,18 +67,10 @@ export default function LovableProWebsite() {
             </Badge>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#sobre" className="text-gray-600 hover:text-gray-900 transition-colors">
-              Sobre
-            </Link>
-            <Link href="#servicos" className="text-gray-600 hover:text-gray-900 transition-colors">
-              Serviços
-            </Link>
-            <Link href="#depoimentos" className="text-gray-600 hover:text-gray-900 transition-colors">
-              Depoimentos
-            </Link>
-            <Link href="#ofertas" className="text-gray-600 hover:text-gray-900 transition-colors">
-              Ofertas
-            </Link>
+            
+            
+            
+            
           </nav>
           <Button asChild className="bg-green-600 hover:bg-green-700 shadow-lg">
             <Link href={whatsappMessages.header} target="_blank">
@@ -274,19 +266,19 @@ export default function LovableProWebsite() {
                 </p>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start text-sm text-gray-600">
-                    <CheckCircle className="w-4 h-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0 text-yellow-600" />
                     <span>
                       <strong>Campanhas que convertem</strong> sem queimar dinheiro
                     </span>
                   </li>
                   <li className="flex items-start text-sm text-gray-600">
-                    <CheckCircle className="w-4 h-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0 text-yellow-600" />
                     <span>
                       <strong>Conteúdo magnético</strong> que atrai seu cliente ideal
                     </span>
                   </li>
                   <li className="flex items-start text-sm text-gray-600">
-                    <CheckCircle className="w-4 h-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0 text-yellow-600" />
                     <span>
                       <strong>ROI garantido</strong> em cada real investido
                     </span>
@@ -311,19 +303,19 @@ export default function LovableProWebsite() {
                 </p>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start text-sm text-gray-600">
-                    <CheckCircle className="w-4 h-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0 text-destructive" />
                     <span>
                       <strong>Sessões 1:1</strong> focadas no seu negócio
                     </span>
                   </li>
                   <li className="flex items-start text-sm text-gray-600">
-                    <CheckCircle className="w-4 h-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0 text-destructive" />
                     <span>
                       <strong>Suporte direto</strong> via WhatsApp
                     </span>
                   </li>
                   <li className="flex items-start text-sm text-gray-600">
-                    <CheckCircle className="w-4 h-4 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0 text-destructive" />
                     <span>
                       <strong>Resultados em 30 dias</strong> ou seu dinheiro de volta
                     </span>
@@ -354,16 +346,16 @@ export default function LovableProWebsite() {
           </div>
 
           <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12 items-center text-center tracking-normal leading-7 m-auto p-0 shadow-2xl rounded-3xl">
+            <div className="grid lg:grid-cols-2 gap-12 items-center text-center tracking-normal leading-7 m-auto p-0 rounded-none shadow-none">
               <div className="space-y-8">
                 {/* Green Box */}
                 <div className="bg-green-600 text-white p-8 rounded-2xl py-8 my-0 mx-0 border-0">
                   <h3 className="text-2xl font-bold mb-6">FAZ ESSA CONTA COMIGO:</h3>
-                  <p className="text-lg leading-relaxed">
+                  <p className="text-lg leading-relaxed italic">
                     Se você investir <span className="text-yellow-300 font-bold text-xl">R$15 por dia</span>, durante 30
                     dias, com a configuração que eu vou fazer...
                   </p>
-                  <p className="text-lg leading-relaxed mt-4">
+                  <p className="text-lg leading-relaxed mt-4 italic">
                     dá pra mostrar sua loja para mais de{" "}
                     <span className="text-yellow-300 font-bold text-2xl">15 MIL pessoas</span> da sua cidade ou região!
                   </p>
@@ -394,12 +386,7 @@ export default function LovableProWebsite() {
           </div>
 
           <div className="text-center mt-12">
-            <Button size="lg" asChild className="bg-green-600 hover:bg-green-700 text-lg px-8 py-4">
-              <Link href={whatsappMessages.transformation} target="_blank">
-                <MessageCircle className="w-5 h-5 mr-2" />
-                Quero Começar Agora Mesmo!
-              </Link>
-            </Button>
+            
           </div>
         </div>
       </section>
