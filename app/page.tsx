@@ -122,7 +122,7 @@ export default function LovableProWebsite() {
       </section>
 
       {/* Pain Points Section */}
-      <section className="py-20 bg-yellow-600">
+      <section className="bg-yellow-600 m-0 p-3">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-green-50">Você está cansado de...</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -148,7 +148,7 @@ export default function LovableProWebsite() {
               <p className="text-white">Falta de scripts e estratégias que realmente convertem</p>
             </div>
           </div>
-          <Button size="lg" asChild className="bg-green-600 hover:bg-green-700 text-lg px-8 py-4">
+          <Button size="lg" asChild className="hover:bg-green-700 text-lg px-8 py-4 bg-white text-yellow-600">
             <Link href={whatsappMessages.painPoints} target="_blank">
               <MessageCircle className="w-5 h-5 mr-2" />
               Quero Resolver Isso Agora!
@@ -158,10 +158,10 @@ export default function LovableProWebsite() {
       </section>
 
       {/* About Section */}
-      <section id="sobre" className="py-20 bg-green-600">
+      <section id="sobre" className="bg-green-600 p-1.5">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <Badge className="mb-4 bg-blue-100 text-blue-800">Quem é Jhonatan Willians?</Badge>
+            <Badge className="mb-4 bg-white text-black">Quem é Jhonatan Willians?</Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
               O Especialista que vai <span className="text-white">Transformar</span> seu WhatsApp
             </h2>
@@ -213,10 +213,10 @@ export default function LovableProWebsite() {
       </section>
 
       {/* Services Section */}
-      <section id="servicos" className="py-20 bg-slate-800">
+      <section id="servicos" className="bg-slate-800 leading-7 p-2">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-green-100 text-green-800">Meus Serviços</Badge>
+            <Badge className="mb-4 bg-white text-slate-600">Meus Serviços</Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               Como vou <span className="text-green-600">Multiplicar</span> suas Vendas
             </h2>
@@ -228,8 +228,8 @@ export default function LovableProWebsite() {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <Card className="p-8 hover:shadow-xl transition-all duration-300 border-2 hover:border-green-200">
               <CardContent className="p-0">
-                <div className="w-20 h-20 bg-green-100 rounded-xl flex items-center justify-center mb-6 mx-auto">
-                  <MessageCircle className="w-10 h-10 text-green-600" />
+                <div className="w-20 h-20 rounded-xl flex items-center justify-center mb-6 mx-auto bg-green-600">
+                  <MessageCircle className="w-10 h-10 text-green-100" />
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-center">WhatsApp Business Turbinado</h3>
                 <p className="mb-6 text-center">
@@ -265,8 +265,8 @@ export default function LovableProWebsite() {
 
             <Card className="p-8 hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-200">
               <CardContent className="p-0">
-                <div className="w-20 h-20 bg-blue-100 rounded-xl flex items-center justify-center mb-6 mx-auto">
-                  <TrendingUp className="w-10 h-10 text-blue-600" />
+                <div className="w-20 h-20 rounded-xl flex items-center justify-center mb-6 mx-auto bg-yellow-600">
+                  <TrendingUp className="w-10 h-10 text-yellow-50" />
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-center">Marketing Digital Certeiro</h3>
                 <p className="text-gray-600 mb-6 text-center">
@@ -292,7 +292,7 @@ export default function LovableProWebsite() {
                     </span>
                   </li>
                 </ul>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700" asChild>
+                <Button className="w-full hover:bg-blue-700 bg-yellow-600" asChild>
                   <Link href={whatsappMessages.marketingService} target="_blank">
                     Quero Atrair Mais Clientes
                   </Link>
@@ -302,8 +302,8 @@ export default function LovableProWebsite() {
 
             <Card className="p-8 hover:shadow-xl transition-all duration-300 border-2 hover:border-purple-200">
               <CardContent className="p-0">
-                <div className="w-20 h-20 bg-purple-100 rounded-xl flex items-center justify-center mb-6 mx-auto">
-                  <Target className="w-10 h-10 text-purple-600" />
+                <div className="w-20 h-20 rounded-xl flex items-center justify-center mb-6 mx-auto bg-destructive">
+                  <Target className="w-10 h-10 text-red-50" />
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-center">Mentoria Mão na Massa</h3>
                 <p className="text-gray-600 mb-6 text-center">
@@ -329,7 +329,7 @@ export default function LovableProWebsite() {
                     </span>
                   </li>
                 </ul>
-                <Button className="w-full bg-purple-600 hover:bg-purple-700" asChild>
+                <Button className="w-full hover:bg-purple-700 bg-destructive" asChild>
                   <Link href={whatsappMessages.mentoringService} target="_blank">
                     Quero Mentoria Personalizada
                   </Link>
@@ -345,10 +345,10 @@ export default function LovableProWebsite() {
       </section>
 
       {/* Impacto Rápido Section */}
-      <section className="py-20 bg-slate-800">
+      <section className="bg-slate-800 p-2.5">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-12 text-green-600 border-0">
+            <h2 className="text-3xl md:text-5xl font-bold border-0 bg-white text-green-700 mb-12 py-1.5">
               Impacto RÁPIDO Mesmo com Pouco Orçamento!
             </h2>
           </div>
@@ -405,7 +405,7 @@ export default function LovableProWebsite() {
       </section>
 
       {/* Special Offers Section */}
-      <section id="ofertas" className="py-20 bg-gradient-to-br from-gray-900 to-black text-white">
+      <section id="ofertas" className="bg-gradient-to-br from-gray-900 to-black text-white p-4">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-red-600 text-white">🔥 OFERTAS LIMITADAS</Badge>
@@ -527,7 +527,7 @@ export default function LovableProWebsite() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-transparent">
+      <section className="bg-transparent p-4">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-green-500 text-white">Metodologia Comprovada</Badge>
@@ -584,7 +584,7 @@ export default function LovableProWebsite() {
       </section>
 
       {/* Testimonials Section */}
-      <section id="depoimentos" className="py-20 bg-black">
+      <section id="depoimentos" className="bg-black p-3">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-white text-green-600">Depoimentos Reais</Badge>
@@ -605,7 +605,7 @@ export default function LovableProWebsite() {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="py-20 bg-slate-900">
+      <section id="faq" className="bg-slate-900 p-3.5">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-white text-slate-800">Dúvidas Frequentes</Badge>
@@ -669,7 +669,7 @@ export default function LovableProWebsite() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-green-600 to-green-700">
+      <section className="bg-gradient-to-r from-green-600 to-green-700 p-0">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
             Não Deixe Suas Vendas <span className="text-yellow-300">PARADAS</span> Por Mais Tempo!
