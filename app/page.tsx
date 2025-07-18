@@ -158,7 +158,7 @@ export default function LovableProWebsite() {
       </section>
 
       {/* About Section */}
-      <section id="sobre" className="bg-green-600 p-1.5">
+      <section id="sobre" className="bg-green-600 p-3">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge className="mb-4 bg-white text-black">Quem é Jhonatan Willians?</Badge>
@@ -348,7 +348,7 @@ export default function LovableProWebsite() {
       <section className="bg-slate-800 p-2.5">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold border-0 bg-white text-green-700 mb-12 py-1.5">
+            <h2 className="text-3xl md:text-5xl font-bold border-0 mb-12 py-1.5 text-white bg-transparent">
               Impacto RÁPIDO Mesmo com Pouco Orçamento!
             </h2>
           </div>
@@ -413,7 +413,7 @@ export default function LovableProWebsite() {
               Escolha Sua <span className="text-yellow-400">Transformação</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Apenas 10 vagas disponíveis este mês. Não perca essa oportunidade!
+              Apenas 3 vagas disponíveis este mês. Não perca essa oportunidade!
             </p>
           </div>
 
@@ -670,7 +670,7 @@ export default function LovableProWebsite() {
 
       {/* Final CTA Section */}
       <section className="bg-gradient-to-r from-green-600 to-green-700 p-0">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto text-center p-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
             Não Deixe Suas Vendas <span className="text-yellow-300">PARADAS</span> Por Mais Tempo!
           </h2>
